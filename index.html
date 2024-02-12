@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet" />
+    <style>
+        body{
+            margin:0px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <img src="https://repository-images.githubusercontent.com/69609/6d346300-3bc4-11ea-81da-6ff573cc4987" height="70px" style="position:relative; right:20%;" />
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a href="#addbook">Add Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>    
+    <main>
+        <div class="about" id="about">
+        <marquee>Welcome to Open Library Catalog</marquee>
+        <div class="about-info" id="about-info">
+            <p>Find books that interests you!!!</p>
+            <select id="select1">
+               <option value="title">Title</option>
+               <option value="author">Author</option>
+               <option value="genre">Genre</option>
+            </select>
+            <input type="text" id="search" placeholder="Search">
+            <button id="search-button" onclick="bookSearch()">Search</button>
+        </div> 
+        </div>
+        <div id="catalog">
+        <div class="catalog-info">
+            <h1>Catalog</h1>
+            <div class="container">
+                <img src="https://m.media-amazon.com/images/I/71Eko3myOEL._SY425_.jpg" height="200px" alt="miracle morning"/>
+                <h3>The Miracle Morning</h3>
+                <p>Author: Hal Elrod</p>
+                <button>Borrow</button>
+            </div>
+            <div class="container">
+                <img src="https://m.media-amazon.com/images/I/71sBtM3Yi5L._SL1360_.jpg" height="200px" />
+                <h3>The Power of Subconscious Mind</h3>
+                <p>Author: Joseph Murphy</p>
+                <button>Borrow</button>
+            </div>
+            <div class="container">
+                <img src="https://m.media-amazon.com/images/I/61aJc8wQX4L._SL1400_.jpg" height="200px" />
+                <h3>You Can</h3>
+                <p>Author: Adams</p>
+                <button>Borrow</button>
+            </div>
+        </div>
+        </div>
+        <div id="addbook">
+            <div>
+                <h1 style="text-align:center;">Add Books to the world of books and spread the knowledge!!!</h1>
+                <table>
+                    <tr>
+                        <td>Title</td>
+                        <td><input type="text" id="title" name="title" placeholder="Enter the book title" required/>
+                            <div id="title-err"></div>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td>Author</td>
+                        <td>
+                            <input type="text" id="author" name="author" placeholder="Enter the book author" required/>
+                            <div id="author-err"></div>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td>ISBN</td>
+                        <td>
+                            <input type="text" id="isbn" name="isbn" placeholder="Enter your book isbn number" />
+                            <div id="isbn-err"></div>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td>Genre</td>
+                        <td>
+                            <input type="text" id="genre" name="genre" placeholder="Enter your book genre" required/>
+                            <div id="genre-err"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center;">
+                            <button id="submit" onclick="addBook()">Submit</button>
+                            <div id="success"></div>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+        </div>
+        <div id="catalog">
+            <h1>New Arrivals</h1>
+            <div class="catalog-info catalog-button" id="catalog-info">
+                 
+            </div>
+        </div>
+    </main>
+    <footer style="background-color:hsl(0,0%,25%);" id="contact">
+        <h3 class="hello">Contact Me:</h3>
+        <div class="hello">
+        <img src="./whatsapp.png" height="50px" alt="whatsapp"/>
+        <img src="./instagram.png" height="50px" alt="instagram" />
+        <img src="./linkedin.png" height="50px" alt="linkedin" />
+        </div>
+   </footer>
+
+   <script src="./script.js"></script>    
+</body>
+</html>

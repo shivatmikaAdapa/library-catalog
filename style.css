@@ -1,0 +1,151 @@
+.carousel-item img{
+    background-size:cover;
+    position:relative;
+    left:0px;
+}
+
+
+
+.navbar ul{
+    
+    list-style-type: none;
+    background-color:hsl(0,0%,25%);
+    padding:0px;
+    margin:0px;
+    overflow:hidden;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    display:block;
+    text-align:center;
+}
+
+.navbar a:hover{
+    background-color:hsl(0,0%,10%);
+}
+
+.navbar li{
+    float:left;
+    position:relative;
+    left:70%;
+}
+
+.about{
+
+    background-image: url('https://as2.ftcdn.net/v2/jpg/03/24/19/03/1000_F_324190385_SNRuW7LnzjhCcEAp8AbaajiHtAvGitX1.jpg');
+    width:100%;
+    height:70vh;
+    background-size: cover;
+    font-size:30px;
+    font-family:sans-serif;
+    font-weight:bolder;
+}
+
+.about-info{
+
+    position:relative;
+    left:40%;
+    top:15%;
+}
+
+select, .search, .search-button{
+
+    display:inline-block;
+}
+
+select{
+    height:36px;
+    width:138px;
+    border-radius:10px;
+}
+
+
+input{
+    height:36px;
+    width:300px;
+    border-radius:5px;
+    border:0px solid black;
+}
+
+button{
+    height:36px;
+    width:138px;
+    border-radius:10px;
+    border:0px solid black;
+    background-color:darkblue;
+    color:white;
+}
+
+.catalog-info{
+    height:auto;
+    width:1000px;
+    border-radius:10px;
+    background-color:rgb(119, 119, 123);
+    position:relative;
+    left:20%;
+    color:white;
+}
+
+.container{
+
+    height:350px;
+    width:300px;
+    background-color:white;
+    border-radius:10px;
+    padding:5px;
+    margin:10px;
+    display: inline-block;
+    color:black;
+    text-align: center;
+    
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 25%;
+    position:relative;
+    left:40%;
+}
+
+#success{
+    color:green;
+}
+
+td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px; 
+}
+
+#title-err, #author-err, #isbn-err, #genre-err{
+
+    color:red;
+    font-size:10px;
+} 
+tr:nth-child(even) {
+    background-color: pink;
+}
+
+footer{
+    padding:10px;
+}
+
+.hello{
+    display:inline-block;
+    position:relative;
+    left:70%;
+    color:white;
+}
+.hello img{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.catalog-button{
+    margin:10px;
+}
